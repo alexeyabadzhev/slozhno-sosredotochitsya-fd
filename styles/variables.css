@@ -5,11 +5,11 @@
 :root {
   --main-family: 'IBM Plex Mono';
   --main-color: 255, 0, 112;
-  --second-color: 219, 0, 255;
+  --focus-color: 219, 0, 255;
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: 0, 0, 40;
   --quest-text-color: 241, 178, 206;
-  --big-text: clamp(7.25rem, 5.7694rem + 3.6174vw, 9.8125rem);
+  --big-text: clamp(116px, 0.5625rem + 14.45vw, 157px);
   --normal-text: 18px;
   
 }
