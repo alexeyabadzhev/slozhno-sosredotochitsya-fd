@@ -13,14 +13,14 @@
 
 .header {
   display: grid;
-  grid-template-rows: 190px auto 70px;
+  grid-template-rows: 190px auto 85px;
   padding-block: 20px 134px;
   padding-inline-end: 20px;
   position: relative;
   font-weight: 700;
   block-size: 100dvh;
   min-block-size: 768px;
-  margin-block-end: 65px;
+  margin-block-end: 55px;
 }
 
 .decorated-zone::after {
@@ -163,7 +163,7 @@
 .questions {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  gap: 15px;
 }
 
 .questions:not(:last-child) {
@@ -346,7 +346,7 @@
 
   .header__text {
     align-self: end;
-    inline-size: 355px; 
+    inline-size: 355px;
   }
 
   .content {
