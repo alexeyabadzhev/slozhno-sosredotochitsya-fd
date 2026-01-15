@@ -13,14 +13,14 @@
 
 .header {
   display: grid;
-  grid-template-rows: 190px auto 85px;
+  grid-template-rows: 190px auto 75px;
   padding-block: 20px 134px;
   padding-inline-end: 20px;
   position: relative;
   font-weight: 700;
   block-size: 100dvh;
   min-block-size: 768px;
-  margin-block-end: 55px;
+  margin-block-end: 65px;
 }
 
 .decorated-zone::after {
@@ -162,8 +162,8 @@
 
 .questions {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 15px;
+  grid-template-columns: 315px 650px;
+  gap: 20px;
 }
 
 .questions:not(:last-child) {
@@ -171,7 +171,7 @@
 }
 
 .questions:last-child {
-  margin-block-end: 50px;
+  margin-block-end: 55px;
 }
 
 .question__title {
@@ -299,8 +299,17 @@
     margin-block-start: 65px;
   }
 
-  .question__title {
-    max-inline-size: 236px;
+  .questions {
+    grid-template-columns: 236px 472px;
+  }
+
+  .question-what {
+    grid-template-columns: initial;
+    grid-template-rows: repeat(auto, fit-content);
+  }
+
+  .question-what .question__title {
+    inline-size: 236px;
   }
 
   .question-what__card-list {
@@ -309,6 +318,10 @@
 
   .questions:last-child {
     margin-block-end: 60px;
+  }
+
+  .question-gallery {
+    grid-template-columns: initial;
   }
 
   .footer {
@@ -359,6 +372,10 @@
 
   .question__title {
     max-inline-size: 100%;
+  }
+
+  .question-what .question__title {
+    inline-size: initial;
   }
 
   .questions:not(:last-child) {
