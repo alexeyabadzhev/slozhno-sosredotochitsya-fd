@@ -20,7 +20,7 @@
   font-weight: 700;
   block-size: 100dvh;
   min-block-size: 768px;
-  margin-block-end: 65px;
+  margin-block-end: 60px;
 }
 
 .decorated-zone::after {
@@ -171,7 +171,7 @@
 }
 
 .questions:last-child {
-  margin-block-end: 55px;
+  margin-block-end: 56px;
 }
 
 .question__title {
