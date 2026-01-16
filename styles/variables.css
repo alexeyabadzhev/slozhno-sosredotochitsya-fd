@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-family: 'IBM Plex Mono';
+  --main-family: 'IBM Plex Mono', monospace;
   --main-color: 255, 0, 112;
   --focus-color: 219, 0, 255;
   --bg-image: url('../images/cover-image-dark.png');

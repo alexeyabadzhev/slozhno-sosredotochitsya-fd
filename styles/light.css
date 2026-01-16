@@ -16,29 +16,19 @@
   display: none;
 }
 
-:root.theme-light .header__theme-menu-button {
-  color: rgb(var(--quest-text-color));
+:root.theme-light .header__theme-menu-button,
+:root.theme-light .header__theme-menu-button_type_auto,
+:root.theme-light .question__title,
+:root.theme-light .header__theme-menu-button:hover,
+:root.theme-light .header__theme-menu-button:focus-visible,
+:root.theme-light .decorated-zone::after,
+:root.theme-light .decorated-zone::before {
+  --main-color: 53, 52, 48;
 }
 
-:root.theme-light .header__theme-menu-button:hover {
-  border: 1px solid rgba(var(--quest-text-color), 0.4);
-}
-
-:root.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid rgb(var(--quest-text-color));
-}
-
-:root.theme-light .header__theme-menu-button_type_light {
-  border: 1px solid rgb(var(--quest-text-color));
-}
-
-:root.theme-light .title-decor {
-  color: rgb(var(--quest-text-color));
-}
-
-:root.theme-light .question__title {
-  color: rgb(var(--quest-text-color));
-}
+:root.theme-light .title__decor {
+  --bg-color: 53, 52, 48;
+  }
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -53,31 +43,21 @@
     --quest-text-color: 53, 52, 48;
   }
 
-  .header__decoration-text {
+  :root .header__decoration-text {
     display: none;
   }
 
-  .header__theme-menu-button {
-    color: rgb(var(--quest-text-color));
-  }
-  
-  .header__theme-menu-button:hover {
-    border: 1px solid rgba(var(--quest-text-color), 0.4);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid rgb(var(--quest-text-color));
+  :root .header__theme-menu-button,
+  :root .header__theme-menu-button_type_auto,
+  :root .header__theme-menu-button:hover,
+  :root .header__theme-menu-button:focus-visible,
+  :root .question__title,
+  :root .decorated-zone::after,
+  :root .decorated-zone::before {
+    --main-color: 53, 52, 48;
   }
 
-  .header__theme-menu-button_type_light {
-    border: 1px solid rgb(var(--quest-text-color));
-  }
-
-  .title-decor {
-    color: rgb(var(--quest-text-color));
-  }
-
-  .question__title {
-    color: rgb(var(--quest-text-color));
+  :root .title__decor {
+    --bg-color: 53, 52, 48;
   }
 }
