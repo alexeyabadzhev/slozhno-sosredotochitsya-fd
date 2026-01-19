@@ -1,9 +1,3 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
   --main-color: 255, 141, 203;
   --focus-color: 255, 194, 230;
@@ -29,13 +23,9 @@
 :root.theme-light .title__decor {
   --bg-color: 53, 52, 48;
   }
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not(.theme-dark):not(.theme-light) {
     --main-color: 255, 141, 203;
     --focus-color: 255, 194, 230;
     --bg-image: url('../images/cover-image-light.png');
@@ -43,21 +33,21 @@
     --quest-text-color: 53, 52, 48;
   }
 
-  :root .header__decoration-text {
+  :root:not(.theme-dark):not(.theme-light) .header__decoration-text {
     display: none;
   }
 
-  :root .header__theme-menu-button,
-  :root .header__theme-menu-button_type_auto,
-  :root .header__theme-menu-button:hover,
-  :root .header__theme-menu-button:focus-visible,
-  :root .question__title,
-  :root .decorated-zone::after,
-  :root .decorated-zone::before {
+  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button,
+  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button_type_auto,
+  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button:hover,
+  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button:focus-visible,
+  :root:not(.theme-dark):not(.theme-light) .question__title,
+  :root:not(.theme-dark):not(.theme-light) .decorated-zone::after,
+  :root:not(.theme-dark):not(.theme-light) .decorated-zone::before {
     --main-color: 53, 52, 48;
   }
 
-  :root .title__decor {
+  :root:not(.theme-dark):not(.theme-light) .title__decor {
     --bg-color: 53, 52, 48;
   }
 }
