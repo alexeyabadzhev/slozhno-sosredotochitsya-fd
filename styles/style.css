@@ -17,7 +17,7 @@
   font-weight: 700;
   block-size: 100dvh;
   min-block-size: 768px;
-  margin-block-end: 65px;
+  margin-block-end: 60px;
 }
 
 .decorated-zone::after {
@@ -173,7 +173,7 @@
 .questions {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 .questions:not(:last-child) {
@@ -295,8 +295,7 @@
 
   .header__theme-menu {
     align-self: center;
-    justify-self: end;
-    
+    justify-self: end;    
   }
 
   .header__theme-menu-list {
@@ -304,7 +303,8 @@
   }
 
   .header__accent {
-    align-self: center;}
+    align-self: center;
+  }
 
   .header__text {
     max-inline-size: 364px;

@@ -6,5 +6,5 @@
   --bg-color: 0, 0, 40;
   --quest-text-color: 241, 178, 206;
   --big-text: clamp(116px, 0.5625rem + 14.45vw, 157px);
-  --normal-text: 18px;  
+  --normal-text: 18px;
 }
