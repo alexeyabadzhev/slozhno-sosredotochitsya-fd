@@ -1,8 +1,10 @@
 :root.theme-light {
   --main-color: 255, 141, 203;
+  --second-color: 53, 52, 48;
   --focus-color: 255, 194, 230;
   --bg-image: url("../images/cover-image-light.png");
   --bg-color: 255, 241, 247;
+  --title-color: 53, 52, 48;
   --quest-text-color: 53, 52, 48;
 }
 
@@ -10,45 +12,18 @@
   display: none;
 }
 
-:root.theme-light .header__theme-menu-button,
-:root.theme-light .header__theme-menu-button_type_auto,
-:root.theme-light .question__title,
-:root.theme-light .header__theme-menu-button:hover,
-:root.theme-light .header__theme-menu-button:focus-visible,
-:root.theme-light .decorated-zone::after,
-:root.theme-light .decorated-zone::before {
-  --main-color: 53, 52, 48;
-}
-
-:root.theme-light .title__decor {
-  --bg-color: 53, 52, 48;
-}
-
 @media (prefers-color-scheme: light) {
-  :root:not(.theme-dark):not(.theme-light) {
+  :root {
     --main-color: 255, 141, 203;
+    --second-color: 53, 52, 48;
     --focus-color: 255, 194, 230;
     --bg-image: url("../images/cover-image-light.png");
     --bg-color: 255, 241, 247;
+    --title-color: 53, 52, 48;
     --quest-text-color: 53, 52, 48;
   }
 
   :root:not(.theme-dark):not(.theme-light) .header__decoration-text {
     display: none;
-  }
-
-  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button,
-  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button_type_auto,
-  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button:hover,
-  :root:not(.theme-dark):not(.theme-light)
-    .header__theme-menu-button:focus-visible,
-  :root:not(.theme-dark):not(.theme-light) .question__title,
-  :root:not(.theme-dark):not(.theme-light) .decorated-zone::after,
-  :root:not(.theme-dark):not(.theme-light) .decorated-zone::before {
-    --main-color: 53, 52, 48;
-  }
-
-  :root:not(.theme-dark):not(.theme-light) .title__decor {
-    --bg-color: 53, 52, 48;
   }
 }
